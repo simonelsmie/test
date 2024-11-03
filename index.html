@@ -1,19 +1,32 @@
+---
+layout: default
+title: Home
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <div class="container">
-        <h1>About Me</h1>
-        <p>
-            A DevSecOps Engineer with experience in creating custom tooling, automation functionality, and pipeline vulnerability scanning. Passionate about driving the required cultural change to bring Security to the forefront and promote the “Shift Left” mentality.
-        </p>
-        <p>
-            Being a graduate in Chemistry and a former luxury hospitality professional has allowed me to enhance key skills, such as logical and analytical thought processing, problem solving, service delivery, and communication skills—both for people and client management—that I bring with me to every new challenge. I thrive in dynamic environments where teamwork and attention to detail are essential.
-        </p>
-    </div>
+    
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                A DevSecOps Engineer with experience in creating custom tooling, automation functionality, and pipeline vulnerability scanning. Passionate about driving the required cultural change to bring Security to the forefront and promote the “Shift Left” mentality.
+            </p>
+            <p>
+                Being a graduate in Chemistry and a former luxury hospitality professional has allowed me to enhance key skills, such as logical and analytical thought processing, problem solving, service delivery, and communication skills—both for people and client management—that I bring with me to every new challenge. I thrive in dynamic environments where teamwork and attention to detail are essential.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} Simon Elsmie. All rights reserved.</p>
+    </footer>
 </body>
 </html>
